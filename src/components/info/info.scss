@@ -1,0 +1,27 @@
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .info--container{
+        width: 75%;
+        padding: 5em 2em;
+        position: relative;
+    }
+
+    .about--img{
+        position: absolute;
+        opacity: 0.3;
+        mix-blend-mode:soft-light;
+        border-radius: 3%;
+        width: 175px;
+        height: 275px;
+        z-index: -1;
+        filter: grayscale(75%) sepia(80%) brightness(90%);
+        @media (min-width:1920px){
+            width:  275px;
+            height:  420px;
+        }
+    }
+
+
+}

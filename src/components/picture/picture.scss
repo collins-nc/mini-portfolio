@@ -1,0 +1,27 @@
+.myPic--wrap{
+    width: 24em;
+    height: 22em;
+    right: 6.5em;
+    bottom: 4em;
+    position: absolute;
+    z-index: -1;
+    @media (min-width:1920px){
+        width: 28em;
+        height: 35em;
+        right: 15em;
+        bottom: 4em;
+    }
+    .myPic{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        &.mask{
+            filter:  grayscale(75%) sepia(80%) brightness(90%);
+        }
+        @media (min-width:1920px){
+            width: 28em;
+        }
+    }
+    
+
+}

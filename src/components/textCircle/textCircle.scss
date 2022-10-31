@@ -1,0 +1,23 @@
+    .circular--text{
+        margin-right: 2.5em;
+        width: 11em;
+        height: 11em;
+        color: white;
+        font-size: 0.9em;
+        transition: all .5s ease-out;
+        animation: animation 20s linear infinite;
+        :hover{
+            font-size: 1.3em;
+            color: #64ffda;
+        }
+        @keyframes animation {
+            0%{
+                transform: rotate(0deg);
+
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+    }

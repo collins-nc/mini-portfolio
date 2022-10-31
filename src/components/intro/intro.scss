@@ -1,0 +1,79 @@
+.intro{
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #82bfa3;
+  z-index: 20;
+    animation: close 2s ease-out 5.2s;
+  @keyframes close {
+    0%{
+      clip-path: inset(0 0 0 0 );
+    }
+    100%{
+      clip-path: inset(0 0 100% 0 );
+      display: none;
+      visibility: hidden;
+    }
+  }
+  .intro--typewriter p {
+    font-size: 7.5em;
+    @media (min-width:1920px) {
+      font-size: 10em;
+    }
+    font-weight: bold;
+    overflow: hidden;
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: 0.1em; 
+    background-color: #CA4246;
+    background: conic-gradient(
+      #CA4246 16.666%, 
+      #E16541 16.666%, 
+      #E16541 33.333%, 
+      #F18F43 33.333%, 
+      #F18F43 50%, 
+      #8B9862 50%, 
+      #8B9862 66.666%, 
+      #476098 66.666%, 
+      #476098 83.333%, 
+      #A7489B 83.333%);
+    background-size: 57%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: 
+    typing 3s steps(15, end),
+    blink-caret .5s step-end infinite,
+    expand 2s linear 3.1s;
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange }
+    }
+    @keyframes expand {
+      0%{
+        background-position: 0 0;
+      }
+      50%{
+        transform: scale(0.7);
+        background-position: 0 1em;
+      }
+      100%{
+        background-position: -9em 1em;
+      }
+    }
+
+  }
+
+
+}

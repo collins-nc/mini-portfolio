@@ -1,0 +1,33 @@
+.skill{
+    .skill__bar{
+        width: 75%;
+        height: 1px;
+        background: gray;
+    }
+    .skill__block{
+        display: flex;
+        margin-left: 3em;
+        padding: 0.1em 0;
+        .skill--tl{
+            color: #64ffda;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                margin-left: 1em;
+                @media (min-width:1920px){
+                    font-size: 1.5em;
+                }
+                &:hover{
+                    color: white;
+                    transform: scale(1.2);
+                }
+            }
+            &.skill--mid{
+                margin: 0 10em;
+            }
+        }
+        
+
+    }
+}
