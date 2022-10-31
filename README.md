@@ -7,6 +7,8 @@
   </p>
 </div>
 
+![This is an image](site.png)
+
 ## Getting started 
 
 Make sure Node & Git are installed 
