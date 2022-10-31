@@ -1,5 +1,5 @@
 <div align="center">
-  <h3 align="center">Collins Moeketsi SovTech Challenge</h3>
+  <h3 align="center">Noko Collins Moeketsi SovTech Challenge</h3>
 
   <p align="center">
     <br />
